@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 11:41:23 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 13:56:32 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/03 19:24:40 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	size_t	i;
-	const void		*temp;
-	char			*destp;
-	char			*srcp;
+	size_t		i;
+	const void	*temp;
+	char		*destp;
+	char		*srcp;
 
 	i = 0;
 	temp = src;

@@ -3,17 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:50:20 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 13:57:34 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/03 19:23:13 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <stdlib.h>
+# include <stdlib.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
