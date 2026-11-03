@@ -6,7 +6,7 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:50:20 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 20:33:50 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/03 21:19:52 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,7 @@ void	*ft_memmove(void *dest, const void *src, unsigned long n);
 size_t	ft_strlcpy(char *dst, const char *src, unsigned long size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 int		ft_toupper(char c);
+char	*ft_strchr(char *s, int c);
+char	*ft_strrchr(char *s, int c);
 
 #endif
