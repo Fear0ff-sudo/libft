@@ -6,11 +6,13 @@
 /*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 11:28:05 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/02 11:34:25 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/03 14:09:18 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long	ft_strlen(const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 

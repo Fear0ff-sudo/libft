@@ -6,15 +6,15 @@
 /*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 11:47:20 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 13:35:11 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/03 14:06:34 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned long	ft_strlcpy(char *dst, const char *src, unsigned long size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	unsigned long	i;
+	size_t	i;
 
 	i = 0;
 	if (size > 0)

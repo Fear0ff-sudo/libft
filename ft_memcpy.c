@@ -6,13 +6,15 @@
 /*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 10:52:33 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 11:38:42 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/03 13:56:19 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *dest, const void *src, unsigned long n)
+#include "libft.h"
+
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned long	i;
+	size_t	i;
 	char			*destp;
 	char			*srcp;
 

@@ -6,13 +6,15 @@
 /*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 11:41:23 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 11:46:41 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/03 13:56:32 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memmove(void *dest, const void *src, unsigned long n)
+#include "libft.h"
+
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned long	i;
+	size_t	i;
 	const void		*temp;
 	char			*destp;
 	char			*srcp;

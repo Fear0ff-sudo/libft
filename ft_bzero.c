@@ -6,13 +6,15 @@
 /*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 10:37:33 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 10:52:01 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/03 13:55:48 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(void *s, unsigned long n)
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned long	i;
+	size_t	i;
 	char			*sp;
 
 	sp = (char *)s;

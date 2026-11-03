@@ -6,13 +6,15 @@
 /*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 12:02:52 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 10:39:38 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/03 13:56:38 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *s, int c, unsigned long n)
+#include "libft.h"
+
+void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned long	i;
+	size_t	i;
 	char			*sp;
 
 	sp = (char *)s;
