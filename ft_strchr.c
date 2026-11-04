@@ -6,13 +6,13 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 20:37:26 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 21:19:34 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/04 12:49:39 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
@@ -21,7 +21,7 @@ char	*ft_strchr(char *s, int c)
 		i++;
 	if (s[i] == '\0' && c != '\0')
 		return (NULL);
-	return (s + i);
+	return ((char *)(s + i));
 }
 
 // #include <stdio.h>
