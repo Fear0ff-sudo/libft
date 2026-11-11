@@ -6,11 +6,11 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 20:28:47 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 20:33:55 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/11 23:17:28 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_lower(char c)
+int	ft_tolower(char c)
 {
 	if (c >= 65 && c <= 90)
 		return (c = c + 32);
