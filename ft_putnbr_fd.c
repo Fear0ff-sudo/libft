@@ -6,13 +6,13 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 14:56:56 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/09 15:42:57 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/11 22:39:14 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_square(int n, int exponent)
+static int	ft_square(int n, int exponent)
 {
 	int	i;
 
@@ -25,7 +25,7 @@ int	ft_square(int n, int exponent)
 	return (n);
 }
 
-void	ft_handlenegative(int *np, int fd)
+static void	ft_handlenegative(int *np, int fd)
 {
 	if (*np < 0)
 	{

@@ -6,13 +6,13 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 12:25:17 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/06 12:54:59 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/11 22:39:58 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strtrimlen(char const *s1, char const *set)
+static int	ft_strtrimlen(char const *s1, char const *set)
 {
 	int	i;
 	int	j;
@@ -36,7 +36,7 @@ int	ft_strtrimlen(char const *s1, char const *set)
 	return (res);
 }
 
-int	ft_isset(char const c, char const *set)
+static int	ft_isset(char const c, char const *set)
 {
 	int	i;
 

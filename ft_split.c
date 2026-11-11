@@ -6,13 +6,13 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 13:48:21 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/06 16:58:57 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/11 22:39:35 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_free_all(char **res, int k)
+static char	**ft_free_all(char **res, int k)
 {
 	while (k > 0)
 	{
@@ -23,7 +23,7 @@ char	**ft_free_all(char **res, int k)
 	return (NULL);
 }
 
-int	ft_splitcnt(char const *s, char c)
+static int	ft_splitcnt(char const *s, char c)
 {
 	int	i;
 	int	res;
@@ -39,7 +39,7 @@ int	ft_splitcnt(char const *s, char c)
 	return (res);
 }
 
-char	*ft_splitassign(char const *s, int start, int len)
+static char	*ft_splitassign(char const *s, int start, int len)
 {
 	int		j;
 	char	*word;
@@ -58,7 +58,7 @@ char	*ft_splitassign(char const *s, int start, int len)
 	return (word);
 }
 
-char	*ft_splitword(char const *s, char c, int *ip)
+static char	*ft_splitword(char const *s, char c, int *ip)
 {
 	int	start;
 	int	i;

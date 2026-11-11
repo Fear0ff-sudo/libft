@@ -6,13 +6,13 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 18:15:54 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/09 00:09:50 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/11 22:38:55 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_countsize(int n)
+static int	ft_countsize(int n)
 {
 	int	res;
 
@@ -27,7 +27,7 @@ int	ft_countsize(int n)
 	return (res);
 }
 
-int	ft_square(int n, int exponent)
+static int	ft_square(int n, int exponent)
 {
 	int	i;
 
@@ -40,7 +40,7 @@ int	ft_square(int n, int exponent)
 	return (n);
 }
 
-char	*ft_assign(int n, int negative, char *res)
+static char	*ft_assign(int n, int negative, char *res)
 {
 	int	i;
 	int	j;
