@@ -6,7 +6,7 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 12:50:20 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/11 15:43:25 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/11 22:21:23 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,14 @@ int				ft_isalnum(int c);
 int				ft_isascii(int c);
 int				ft_isprint(int c);
 size_t			ft_strlen(const char *s);
-void			*ft_memset(void *s, int c, unsigned long n);
+void			*ft_memset(void *s, int c, size_t n);
 void			ft_bzero(void *s, unsigned long n);
-void			*ft_memcpy(void *dest, const void *src, unsigned long n);
-void			*ft_memmove(void *dest, const void *src, unsigned long n);
-size_t			ft_strlcpy(char *dst, const char *src, unsigned long size);
+void			*ft_memcpy(void *dest, const void *src, size_t n);
+void			*ft_memmove(void *dest, const void *src, size_t n);
+size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 int				ft_toupper(char c);
+int				ft_lower(char c);
 char			*ft_strchr(char *s, int c);
 char			*ft_strrchr(char *s, int c);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -53,6 +54,7 @@ char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void			ft_striteri(char *s, void (*f)(unsigned int, char*));
 void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
+void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 t_list			*ft_lstnew(void *content);
 void			ft_lstadd_front(t_list **lst, t_list *new);
@@ -61,5 +63,8 @@ t_list			*ft_lstlast(t_list *lst);
 void			ft_lstadd_back(t_list **lst, t_list *new);
 void			ft_lstdelone(t_list *lst, void (*del)(void *));
 void			ft_lstclear(t_list **lst, void (*del)(void *));
+void			ft_lstiter(t_list *lst, void (*f)(void *));
+t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
+					void (*del)(void *));
 
 #endif
