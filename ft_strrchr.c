@@ -6,7 +6,7 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 20:53:20 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/04 12:52:01 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/12 00:03:56 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,13 @@ char	*ft_strrchr(const char *s, int c)
 	res = -1;
 	while (s[i])
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			res = i;
 		i++;
 	}
-	if (s[i] == c || res != -1)
+	if (s[i] == (char)c)
+		return ((char *)(s + i));
+	if (res != -1)
 		return ((char *)(s + res));
 	return (NULL);
 }
