@@ -15,8 +15,9 @@ with the others in your **cc** or **gcc** command.
 
 # Resources
 Here are some resources that could help if you are new to this:
-https://fr.wikipedia.org/wiki/C_(langage)
-https://en.wikipedia.org/wiki/Make_(software)
+* https://fr.wikipedia.org/wiki/C_(langage)
+* https://en.wikipedia.org/wiki/Make_(software)
+
 Here is my github, especially the project page. You can follow the development and all the commits
 there:
 https://github.com/Fear0ff-sudo/libft
