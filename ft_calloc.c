@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 14:39:38 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/05 15:13:41 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/12 19:56:33 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	size_t			i;
 
 	i = 0;
-	if (nmemb * size > 2147483647)
+	if (nmemb != 0 && (nmemb * size) / nmemb != size)
 		return (NULL);
 	res = malloc(nmemb * size);
 	if (res == NULL)

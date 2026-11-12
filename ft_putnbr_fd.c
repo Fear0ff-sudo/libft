@@ -6,57 +6,30 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 14:56:56 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/11 22:39:14 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/12 20:54:33 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_square(int n, int exponent)
-{
-	int	i;
-
-	i = 0;
-	while (i < exponent)
-	{
-		n = n * 10;
-		i++;
-	}
-	return (n);
-}
-
-static void	ft_handlenegative(int *np, int fd)
-{
-	if (*np < 0)
-	{
-		*np *= -1;
-		write(fd, "-", 1);
-	}
-}
-
 void	ft_putnbr_fd(int n, int fd)
 {
-	int		i;
-	int		last;
-	char	res;
+	char	c;
 
-	i = 0;
 	if (n == -2147483648)
-		write(fd, "-2147483648", 11);
-	else
 	{
-		ft_handlenegative(&n, fd);
-		last = n;
-		while (last > 10)
-		{
-			last /= 10;
-			i++;
-		}
-		res = last + 48;
-		write(fd, &res, 1);
-		if (i > 0)
-			ft_putnbr_fd(n - (last * ft_square(1, i)), fd);
+		write(fd, "-2147483648", 11);
+		return ;
 	}
+	if (n < 0)
+	{
+		n = -n;
+		write(fd, "-", 1);
+	}
+	if (n >= 10)
+		ft_putnbr_fd(n / 10, fd);
+	c = (n % 10) + '0';
+	write(fd, &c, 1);
 }
 // int	main(int argc, char **argv)
 // {
