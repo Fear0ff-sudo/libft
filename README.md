@@ -20,7 +20,8 @@ Here are some resources that could help if you are new to this:
 
 Here is my github, especially the project page. You can follow the development and all the commits
 there:
-https://github.com/Fear0ff-sudo/libft
+* https://github.com/Fear0ff-sudo/libft
+
 For most of the functions, you can use **man** to find the descriptions.
 
 While **AI** helped a lot *learning* or *seaching* some notions, **none** of these project lines
