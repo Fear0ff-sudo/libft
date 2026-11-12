@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 11:47:20 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/03 14:06:34 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/12 00:56:06 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	i = 0;
 	if (size > 0)
 	{
-		while (i < size - 1)
+		while (src[i] && i < size - 1)
 		{
 			dst[i] = src[i];
 			i++;
