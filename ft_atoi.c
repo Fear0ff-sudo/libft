@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amanet <amanet@student.42.fr>              +#+  +:+       +#+        */
+/*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 12:21:38 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/05 14:36:57 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/12 01:34:24 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,26 @@
 int	ft_atoi(const char *nptr)
 {
 	int	i;
+	int	sign;
 	int	res;
 
 	i = 0;
-	if (nptr[0] == '-')
+	res = 0;
+	sign = 1;
+	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
-	while (nptr[i] >= 48 && nptr[i] <= 57)
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		res = (res * 10) + nptr[i] - 48;
+		if (nptr[i] == '-')
+			sign = -1;
 		i++;
 	}
-	if (nptr[0] != '-')
-		return (res);
-	return (res * -1);
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
+		res = (res * 10) + nptr[i] - '0';
+		i++;
+	}
+	return (res * sign);
 }
 
 // #include <stdio.h>

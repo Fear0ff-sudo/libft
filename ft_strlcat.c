@@ -6,7 +6,7 @@
 /*   By: amanet <amanet@student.42nice.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/03 13:40:38 by amanet            #+#    #+#             */
-/*   Updated: 2026/11/12 01:10:38 by amanet           ###   ########.fr       */
+/*   Updated: 2026/11/12 01:26:46 by amanet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		dst[i] = '\0';
 	}
 	return (sizedst + sizesrc);
-	
 }
 // #include <stdio.h>
 // #include <bsd/string.h>
